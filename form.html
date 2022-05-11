@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Modal Example</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Candidature</h4>
+        </div>
+        <div class="modal-body">
+        <form accept-charset="utf-8" method="post" enctype="multipart/form-data"  method="POST" action="c.php">
+        
+          <div class="col-md-6">
+            <div class="form-group">
+                <label for="usr">CIN:</label>
+                <input type="text" class="form-control"  placeholder="Chercher par CIN" id="cinrecherche" name="cinrecherche" >
+        
+            </div>
+          </div>
+          <div class="col-md-6">
+          <div class="form-group">
+            <label for="usr">Nom:</label>
+            <input type="text" class="form-control" id="nom" name="nom" placeholder="Nom et Prenom">   
+            </div>
+          </div>
+         
+         
+           <div class="col-md-6">
+           <div class="form-group">
+            <label for="usr">Telephone:</label>
+            <input type="text" class="form-control" id="telephone" name="telephone" placeholder="Telephone">
+            </div>
+          </div>
+          <div class="col-md-6">
+          <div class="form-group">
+            <label for="usr">1 perssone à appeler en cas d'accident:</label>
+            <input type="text" class="form-control" id="telephone1" name="telephone1" placeholder="1 perssone à appeler en cas d'accident" >
+      
+            </div>
+          </div>
+           <div class="col-md-6">
+           <div class="form-group">
+            <label for="usr">2 perssone à appeler en cas d'accident:</label>
+             <input type="text" class="form-control" id="telephone2" name="telephone2" placeholder="2 perssone à appeler en cas d'accident" >
+            </div>
+          </div>
+          <div class="col-md-6">
+          <div class="form-group">
+  <label for="usr">FIX:</label>
+ <input type="text" class="form-control" id="fix" name="fix" placeholder="Fix">
+     
+  </div>
+          </div>
+           <div class="col-md-6">
+           <div class="form-group">
+  <label for="usr">Adresse:</label>
+   <input type="text" class="form-control" id="adresse" name="adresse" placeholder="Adresse">
+      </div>
+          </div>
+          <div class="col-md-6">
+          <div class="form-group">
+  <label for="usr">Date Naissance:</label>
+    <input type="date" class="form-control" id="date_naissance" name="date_naissance" >
+  
+  </div>
+          </div>
+           <div class="col-md-6">
+           <div class="form-group">
+  <label for="usr">Situation:</label>
+  
+	  <select id="situation_familiale" name="situation_familiale" class="form-control">
+                        
+                        <option value="Marié" > Marié(e)</option>
+                        
+                        <option value="Divorcer" > Divorcer </option>
+                        <option value="Celibataire" > Celibataire </option>
+                        <option value="Autre" > Autre </option>
+                        
+                        
+						
+                        
+                      </select>
+       
+      
+  </div>
+          </div>
+          <div class="col-md-6">
+          <div class="form-group">
+  <label for="usr">Niveau:</label>
+ <select id="niveau_etude" name="niveau_etude" class="form-control">
+                        
+                        <option value="Niveau BAC" > Niveau BAC </option>
+                        
+                        <option value="BAC" > BAC </option>
+                        
+                        <option value="BAC+1" > BAC+1 </option>
+                        
+                        <option value="BAC+2" > BAC+2 </option>
+						<option value="BAC+3" > BAC+3 </option>
+						<option value="BAC+4" > BAC+4 </option>
+						<option value="BAC+5" > BAC+5 </option>
+                        
+                      </select>  
+  </div>
+          </div>
+          <div class="col-md-6">
+           <div class="form-group">
+  <label for="usr">Experience:</label>
+    <select id="experience_pro" name="experience_pro" class="form-control">
+                        
+						<option value="Sans" > Sans </option>
+                        <option value="Moins de 6 mois" > Moins de 6 mois </option>
+                        
+                        <option value="Entre 6 mois et un ans" > Entre 6 mois et un ans</option>
+                        
+                        <option value="Plus de un ans" > Plus de un ans </option>
+                        
+                        
+                        
+                      </select>  </div>
+          </div>
+          <div class="col-md-6">
+      	<div class="form-group">
+  <label for="usr">Experience Call Center:</label>
+ <input type="text" class="form-control" id="experience_cc" name="experience_cc" placeholder="Experience Call Center">
+       
+  </div>
+          </div>
+          <div class="col-md-6">
+           <div class="form-group">
+  <label for="usr">1 Langue:</label>
+    <select id="p_langue" name="p_langue" class="form-control">
+                        
+                        <option value="Arabe" > Arabe </option>
+                        
+                        <option value="Français" > Français </option>
+                        
+                        <option value="Anglais" > Anglais </option>
+                        
+                        <option value="Espagnol" > Espagnol </option>
+                        
+                      </select>
+   </div>
+          </div>
+          <div class="col-md-6">
+      	<div class="form-group">
+  <label for="usr">2 langue:</label>
+ <select id="d_langue" name="d_langue" class="form-control">
+                        
+                        <option value="Arabe" > Arabe </option>
+                        
+                        <option value="Français" > Français </option>
+                        
+                        <option value="Anglais" > Anglais </option>
+                        
+                        <option value="Espagnol" > Espagnol </option>
+                        
+                      </select>   
+  </div>
+          </div>
+          <div class="col-md-6">
+          <div class="form-group">
+  <label for="usr">Formation:</label>
+     <select name="formation"  class="form-control" id="formation">
+                                        
+                                        <option value="COMMERCIALE" > COMMERCIALE  </option>
+                                        
+                                        <option value="GESTION"> GESTION</option>
+                                        
+                                        <option value="INGENIERIE"> INGENIERIE </option>
+                                        
+                                        <option value="AUDIT"> AUDIT </option>
+                                        
+                                        <option value="MARKETING"> MARKETING</option>
+                                        
+                                        <option value="TELECOMMUNICATIONS"> TELECOMMUNICATIONS </option>
+                                        
+                                        <option value="FINANCES"> FINANCES </option>
+                                        
+                                        <option value="COMPTABILITE"> COMPTABILITE</option>
+                                        
+                                        <option value="COMMUNICATION"> COMMUNICATION </option>
+                                        
+                                        <option value="ADMINISTRATION"> ADMINISTRATION  </option>
+                                        
+                                        <option value="FORMATION PROFESSIONNELLE"> FORMATION PROFESSIONNELLE</option>
+                                        
+                                        <option value="JURIDIQUE" > JURIDIQUE </option>
+                                        
+                                        <option value="ACHATS"> ACHATS</option>
+                                        
+                                        <option value="LOGISTIQUE"> LOGISTIQUE</option>
+                                        
+                                        <option value="MANAGEMENT"> MANAGEMENT</option>
+                                        
+                                        <option value="MARCHE FINANCIER ET BOURCE"> MARCHE FINANCIER ET BOURCE</option>
+                                        
+                                        <option value="GENIE CIVIL"> GENIE CIVIL</option>
+                                        
+                                        <option value="STATISTIQUE"> STATISTIQUE</option>
+                                        
+                                        <option value="RELATION CLIENTS"> RELATION CLIENTS</option>
+                                        
+                                        <option value="RESSOURCES HUMAINES"> RESSOURCES HUMAINES</option>
+                                        
+                                        <option value="SERVICES GENERAUX"> SERVICES GENERAUX </option>
+                                        
+                                        <option value="MAINTENANCE"> MAINTENANCE                                        </option>
+                                        
+                                        <option value="TOURISME ET GESTION HOTELIERE"> TOURISME ET GESTION HOTELIERE</option>
+                                        
+                                        <option value="GESTION DES AFFAIRES"> GESTION DES AFFAIRES</option>
+                                        
+                                        <option value="CONTROLE DE GESTION"> CONTROLE DE GESTION</option>
+                                        
+                                        <option value="STRATEGIE"> STRATEGIE</option>
+                                        
+                                        <option value="SYSTEMES DINFORMATION"> SYSTEMES D'INFORMATION</option>
+                                        
+                                        <option value="RESEAUX"> RESEAUX </option>
+                                        
+                                        <option value="WEBMASTER ET PRODUCTION MULTIMEDIA"> WEBMASTER ET PRODUCTION MULTIMEDIA </option>
+                                        
+                                        <option value="AUTRES"> AUTRES</option>
+                                        
+                                      </select>
+
+  </div>
+          </div>
+          <div class="col-md-6">
+          <div class="form-group">
+  <label for="usr">Source:</label>
+ <select id="source" name="source" class="form-control">
+                      
+                        <option value="Site web" > Site web </option>
+						<option value="Parainage" > Parainage </option>
+						<option value="Linkedin" > Linkedin </option>
+						<option value="Google" > Google </option>
+                        <option value="Google" > Facebook </option>
+                        <option value="Instagram" > Instagram </option>
+                      </select>   
+</div>
+          </div>
+           <div class="col-md-6">
+          <div class="form-group">
+  <label for="usr">Disponibilité:</label>
+    
+  <select id="disponibilite" name="disponibilite" class="form-control">
+                      
+                      <option value="Imediate" > Imédiate </option>
+                      <option value="Dans un mois" > Dans un mois </option>
+                      <option value="Dans deux mois" > Dans deux mois </option>
+                      
+                    </select>   
+</div>
+  </div>
+        
+          <div class="col-md-6">
+              
+          <div class="form-group">
+  <label for="usr">CV:</label>
+  	<input type="file" class="filestyle form-control" id="pfile" name="pfile" data-input="false">
+     
+  </div>
+          </div>
+          <div class="col-lg-6">
+              <br>
+          <div class="form-group">
+  <button type="submit" class="btn btn-block btn-primary">Enregistrer</button>     
+  </div>
+          </div>
+          <div class="col-lg-6">
+          <div class="form-group">
+              <br>
+   <button type="reset" class="btn btn-block btn-danger">Vider</button>
+  
+  </div>
+          </div>
+          
+           </form> 
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+</body>
+</html>
